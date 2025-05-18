@@ -6,3 +6,9 @@ on:
       node:
         required: true
         type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Node version is ${{ inputs.node }}"
